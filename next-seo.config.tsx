@@ -26,7 +26,7 @@ const defaultSEOConfig = {
           content: '1643590099862579',
         },
       ],
-      
+  
   };
   
   export default defaultSEOConfig;
