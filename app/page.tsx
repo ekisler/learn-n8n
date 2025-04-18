@@ -23,7 +23,7 @@ import {
   PhoneOutlined,
   EnvironmentOutlined,
 } from "@ant-design/icons";
-import { NextSeo } from "next-seo";
+// import { NextSeo } from "next-seo";
 import ReactECharts from "echarts-for-react";
 
 const { Title, Paragraph } = Typography;
@@ -175,24 +175,7 @@ const App: React.FC = () => {
 
   return (
     <>
-    <NextSeo
-        title={courseData.title}
-        description={courseData.subtitle}
-        openGraph={{
-          url: 'https://learn-n8n.vercel.app/learns',
-          title: courseData.title,
-          description: courseData.subtitle,
-          images: [
-            {
-              url: imageUrl,
-              width: 1200,
-              height: 630,
-              alt: courseData.title,
-            },
-          ],
-          site_name: 'Learn n8n', // Reemplaza con el nombre de tu sitio
-        }}
-      />
+  
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <div
