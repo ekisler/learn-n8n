@@ -1,6 +1,8 @@
 import { montserrat } from "./ui/fonts"
 import "@/app/ui/global.css";
 import { ConfigProvider } from 'antd'; 
+import { DefaultSeo } from "next-seo";
+import SEO from "../next-seo.config";
 
 export default function RootLayout({
   children,
@@ -9,6 +11,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <DefaultSeo {...SEO} />
+      </head>
       <body className={`${montserrat.className} antialiased`}>
         <ConfigProvider>
         {children}
