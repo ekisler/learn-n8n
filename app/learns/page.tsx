@@ -23,6 +23,7 @@ import {
   PhoneOutlined,
   EnvironmentOutlined,
 } from "@ant-design/icons";
+import { NextSeo } from "next-seo";
 import ReactECharts from "echarts-for-react";
 
 const { Title, Paragraph } = Typography;
@@ -47,6 +48,8 @@ const App: React.FC = () => {
       bio: "Desarollador Full Stack con más de 10 años de experiencia en automatización de procesos. Especialista certificado en n8n y Make. Ha ayudado a más de 50 empresas a optimizar sus flujos de trabajo.",
     },
   };
+
+  const imageUrl = "https://res.cloudinary.com/dxfksb8ua/image/upload/v1744998918/images/bfd888fb01d5421c6bf2c1e19610b97f_rg4gjd.jpg";
 
   // Módulos del curso
   const modules = [
@@ -171,12 +174,31 @@ const App: React.FC = () => {
   };
 
   return (
+    <>
+    <NextSeo
+        title={courseData.title}
+        description={courseData.subtitle}
+        openGraph={{
+          url: 'https://learn-n8n.vercel.app/learns',
+          title: courseData.title,
+          description: courseData.subtitle,
+          images: [
+            {
+              url: imageUrl,
+              width: 1200,
+              height: 630,
+              alt: courseData.title,
+            },
+          ],
+          site_name: 'Learn n8n', // Reemplaza con el nombre de tu sitio
+        }}
+      />
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <div
         className="relative overflow-hidden"
         style={{
-          backgroundImage: `url('https://readdy.ai/api/search-image?query=Modern%20digital%20automation%20workflow%20with%20glowing%20nodes%20and%20connections%2C%20professional%20tech%20visualization%20with%20blue%20and%20purple%20gradients%2C%20clean%20minimalist%20interface%20design%2C%20abstract%20technology%20concept%2C%20high%20quality%203D%20rendering&width=1440&height=500&seq=1&orientation=landscape')`,
+          backgroundImage: `url('https://res.cloudinary.com/dxfksb8ua/image/upload/v1744998918/images/bfd888fb01d5421c6bf2c1e19610b97f_rg4gjd.jpg')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           height: "500px",
@@ -337,7 +359,7 @@ const App: React.FC = () => {
           <div className="flex flex-col justify-center">
             <div className="rounded-xl overflow-hidden shadow-xl">
               <img
-                src="https://readdy.ai/api/search-image?query=Person%20using%20n8n%20automation%20software%20on%20computer%20screen%2C%20showing%20workflow%20diagrams%20with%20connected%20nodes%2C%20professional%20office%20setting%2C%20modern%20desk%20with%20second%20monitor%2C%20coffee%20cup%2C%20and%20notebook%2C%20soft%20natural%20lighting%2C%20focused%20on%20screen%20interface&width=600&height=400&seq=2&orientation=landscape"
+                src="https://res.cloudinary.com/dxfksb8ua/image/upload/v1744999134/images/59c2c0821e5ce668a2564a95cf389f55_ablijq.jpg"
                 alt="Automatización con n8n"
                 className="w-full h-auto object-cover"
               />
@@ -506,7 +528,7 @@ const App: React.FC = () => {
 
               <div className="mt-8 flex justify-center">
                 <img
-                  src="https://readdy.ai/api/search-image?query=Course%20materials%20displayed%20on%20desk:%20laptop%20with%20n8n%20interface%2C%20printed%20workbooks%2C%20digital%20tablet%2C%20coffee%20mug%2C%20notebook%20with%20diagrams%2C%20professional%20lighting%2C%20organized%20workspace%2C%20top-down%20view%2C%20high%20quality%20educational%20resources&width=400&height=250&seq=4&orientation=landscape"
+                  src="https://res.cloudinary.com/dxfksb8ua/image/upload/v1744999329/images/e6e5f141aa0536a5291a15d451cd596a_reoo72.jpg"
                   alt="Recursos del curso"
                   className="rounded-lg shadow-md w-full max-w-sm"
                 />
@@ -569,7 +591,7 @@ const App: React.FC = () => {
               company: "TechSolutions",
               text: "Este curso transformó la forma en que gestionamos nuestros procesos internos. Logramos automatizar el 70% de nuestras tareas administrativas.",
               avatar:
-                "https://readdy.ai/api/search-image?query=Professional%20headshot%20of%20a%20latina%20woman%20with%20medium%20length%20dark%20hair%2C%20business%20attire%2C%20neutral%20background%2C%20warm%20smile%2C%20office%20setting%2C%20high%20quality%20portrait%2C%20professional%20lighting&width=80&height=80&seq=5&orientation=squarish",
+                "https://res.cloudinary.com/dxfksb8ua/image/upload/v1744999480/images/f9bd9e89c715641101829b8171035904_qtmx1w.jpg",
             },
             {
               name: "Javier Martínez",
@@ -577,7 +599,7 @@ const App: React.FC = () => {
               company: "Innovatech",
               text: "Aunque ya tenía experiencia en programación, este curso me enseñó a crear automatizaciones complejas sin escribir código extenso. Muy recomendable.",
               avatar:
-                "https://readdy.ai/api/search-image?query=Professional%20headshot%20of%20a%20young%20latino%20man%20with%20short%20dark%20hair%2C%20casual%20tech%20company%20attire%2C%20neutral%20background%2C%20friendly%20expression%2C%20office%20environment%2C%20high%20quality%20portrait%2C%20professional%20lighting&width=80&height=80&seq=6&orientation=squarish",
+                "https://res.cloudinary.com/dxfksb8ua/image/upload/v1744999558/images/e1c14b7f0752ab403b0a7a1bcbcd52c9_wa4yl7.jpg",
             },
             {
               name: "Ana Rodríguez",
@@ -585,7 +607,7 @@ const App: React.FC = () => {
               company: "DigitalFlow",
               text: "Gracias a este curso, ahora ofrezco servicios de automatización a mis clientes. Ha sido una excelente inversión que multiplicó mis ingresos.",
               avatar:
-                "https://readdy.ai/api/search-image?query=Professional%20headshot%20of%20a%20middle-aged%20latina%20woman%20with%20shoulder%20length%20hair%2C%20professional%20business%20attire%2C%20neutral%20background%2C%20confident%20smile%2C%20consulting%20office%20setting%2C%20high%20quality%20portrait%2C%20professional%20lighting&width=80&height=80&seq=7&orientation=squarish",
+                "https://res.cloudinary.com/dxfksb8ua/image/upload/v1744999623/images/def99e624965547674678f34a614c46c_xwevlc.jpg",
             },
           ].map((testimonial, index) => (
             <Card key={index} className="shadow-md border-0 rounded-xl h-full">
@@ -817,7 +839,9 @@ const App: React.FC = () => {
                 </li>
                 <li className="flex items-center">
                   <MailOutlined className="mr-3 text-gray-400" />
-                  <span className="text-gray-400">kisler.fullstack@gmail.com</span>
+                  <span className="text-gray-400">
+                    kisler.fullstack@gmail.com
+                  </span>
                 </li>
               </ul>
             </div>
@@ -885,6 +909,7 @@ const App: React.FC = () => {
         </Button>
       </div>
     </div>
+    </>
   );
 };
 

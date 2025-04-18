@@ -41,6 +41,9 @@ importers:
       next-auth:
         specifier: 5.0.0-beta.25
         version: 5.0.0-beta.25(next@15.3.1-canary.7(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)
+      next-seo:
+        specifier: ^6.6.0
+        version: 6.6.0(next@15.3.1-canary.7(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       postcss:
         specifier: 8.5.1
         version: 8.5.1
@@ -769,6 +772,13 @@ packages:
         optional: true
       nodemailer:
         optional: true
+
+  next-seo@6.6.0:
+    resolution: {integrity: sha512-0VSted/W6XNtgAtH3D+BZrMLLudqfm0D5DYNJRXHcDgan/1ZF1tDFIsWrmvQlYngALyphPfZ3ZdOqlKpKdvG6w==}
+    peerDependencies:
+      next: ^8.1.1-canary.54 || >=9.0.0
+      react: '>=16.0.0'
+      react-dom: '>=16.0.0'
 
   next@15.3.1-canary.7:
     resolution: {integrity: sha512-RblvC7A7k8cKpSa6JSCbaatb6JAncv2niUSH7TqXt6xHUoItnxa3Fu7xkducFJQdcW2Hv2h0+NBu6kaKf0S4zw==}
@@ -2053,6 +2063,12 @@ snapshots:
       '@auth/core': 0.37.2
       next: 15.3.1-canary.7(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react: 19.1.0
+
+  next-seo@6.6.0(next@15.3.1-canary.7(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
+    dependencies:
+      next: 15.3.1-canary.7(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
 
   next@15.3.1-canary.7(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
     dependencies:
