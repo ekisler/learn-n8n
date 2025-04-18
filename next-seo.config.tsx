@@ -23,6 +23,7 @@ const defaultSEOConfig = {
     other: {
         "fb:app_id": "1643590099862579",
     }
+
   };
   
   export default defaultSEOConfig;
