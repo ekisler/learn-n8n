@@ -1,6 +1,6 @@
-import { montserrat } from "./ui/fonts";
+import { montserrat } from "./ui/fonts"
 import "@/app/ui/global.css";
-import { ConfigProvider } from "antd";
+import { ConfigProvider } from 'antd'; 
 
 export default function RootLayout({
   children,
@@ -10,10 +10,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${montserrat.className} antialiased`}>
-        <ConfigProvider>{children}</ConfigProvider>
+        <ConfigProvider>
+        {children}
+        </ConfigProvider>
         <footer className="py-10 flex justify-center items-center">
           Hecho con ❤️ por Emisael Kisler
-        </footer>
+        </footer> 
       </body>
     </html>
   );
