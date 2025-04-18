@@ -20,13 +20,9 @@ const defaultSEOConfig = {
       site: '@ekracing',
       cardType: 'summary_large_image',
     },
-    additionalMetaTags: [
-        {
-          property: 'fb:app_id',
-          content: '1643590099862579',
-        },
-      ],
-      
+    other: {
+        "fb:app_id": "1643590099862579",
+    }
   };
   
   export default defaultSEOConfig;
