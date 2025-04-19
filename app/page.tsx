@@ -23,7 +23,6 @@ import {
   PhoneOutlined,
   EnvironmentOutlined,
 } from "@ant-design/icons";
-// import { NextSeo } from "next-seo";
 import ReactECharts from "echarts-for-react";
 
 const { Title, Paragraph } = Typography;
@@ -465,6 +464,9 @@ const App: React.FC = () => {
                   type="default"
                   icon={<i className="fab fa-linkedin text-blue-700"></i>}
                   className="!rounded-button whitespace-nowrap cursor-pointer"
+                  href="https://www.linkedin.com/in/emisael-kisler-fullstack/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   LinkedIn
                 </Button>
@@ -472,6 +474,9 @@ const App: React.FC = () => {
                   type="default"
                   icon={<i className="fab fa-twitter text-blue-400"></i>}
                   className="!rounded-button whitespace-nowrap cursor-pointer"
+                  href="https://x.com/ekracing"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Twitter
                 </Button>
@@ -479,6 +484,9 @@ const App: React.FC = () => {
                   type="default"
                   icon={<i className="fas fa-globe text-gray-600"></i>}
                   className="!rounded-button whitespace-nowrap cursor-pointer"
+                  href="https://emisaelportfolio.netlify.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Sitio Web
                 </Button>
@@ -741,7 +749,7 @@ const App: React.FC = () => {
                   <i className="fab fa-facebook-f text-xl"></i>
                 </a>
                 <a
-                  href="#"
+                  href="https://x.com/ekracing"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   <i className="fab fa-twitter text-xl"></i>
@@ -853,7 +861,16 @@ const App: React.FC = () => {
 
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © 2025 Academia n8n. Todos los derechos reservados.
+              2025 Academia n8n © Desarrollado por
+              <a
+                href="https://emisaelportfolio.netlify.app"
+                className="text-blue-400 hover:text-blue-300 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                Emisael Kisler.
+              </a>
             </p>
             <div className="flex space-x-4 mt-4 md:mt-0">
               <a
